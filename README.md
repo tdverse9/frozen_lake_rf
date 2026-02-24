@@ -26,15 +26,12 @@ Two variants are explored:
 
 
 ## Project Structure
-
 ```
 frozen_lake_combined.ipynb → Combined training notebook
 
 frozen_non_slippery.ipynb → Deterministic environment
 
 README.md → Project documentation
-
-
 ```
 ## Algorithm: Q-Learning
 
@@ -49,8 +46,10 @@ Q-Learning was chosen for three reasons:
 ```
 Q(s, a) ← Q(s, a) + α * [r + γ * max(Q(s', a')) - Q(s, a)]
 ```
- Learning Rate - How fast the agent updates Q-values 
- Discount Factor -How much future rewards are valued 
+ Learning Rate - How fast the agent updates Q-values
+
+ Discount Factor -How much future rewards are valued
+
  Exploration Rate - Probability of random action (epsilon-greedy) 
 
 ---
@@ -59,9 +58,9 @@ Q(s, a) ← Q(s, a) + α * [r + γ * max(Q(s', a')) - Q(s, a)]
 Overview-
 Implements Q-Learning from scratch on the deterministic (non-slippery) version of FrozenLake. This serves as the foundation and baseline for the curriculum learning experiments.
 
-##  #Notebook 2 — frozen_lake_combined.ipynb
+## Notebook 2 — frozen_lake_combined.ipynb
 Overview -
-Extends the problem to a stochastic environment with a custom 20% slip probability. Under this setting, the agent only moves in the intended direction 80% of the time — slipping sideways (left or right of intended) with 10% each. A simple Q-Learner's performance drops significantly under this stochasticity. This notebook applies Curriculum Learning to recover performance within a budget of just 1000 total episodes.
+Extends the problem to a stochastic environment with a custom 20% slip probability. Under this setting, the agent only moves in the intended direction 80% of the time slipping sideways (left or right of intended) with 10% each. A simple Q-Learner's performance drops significantly under this stochasticity. This notebook applies Curriculum Learning to recover performance within a budget of just 1000 total episodes.
 
 ---
 ### In future work, we aim to explore Proximal Policy Optimization (PPO)
@@ -70,6 +69,6 @@ Currently, we do not have deep practical experience with PPO, but we plan to stu
 ## References
 
 - [OpenAI Gymnasium — Frozen Lake](https://gymnasium.farama.org/environments/toy_text/frozen_lake/)
-- Watkins, C.J.C.H. (1989). *Learning from Delayed Rewards*
-- Sutton & Barto — *Reinforcement Learning: An Introduction*
+Website: https://spinningup.openai.com/
+Paper:Dragan et al., *Quantum Reinforcement Learning for Solving a Stochastic Frozen Lake*, Fraunhofer Institute, 2022
 ---
