@@ -69,6 +69,6 @@ Currently, we do not have deep practical experience with PPO, but we plan to stu
 ## References
 
 - [OpenAI Gymnasium — Frozen Lake](https://gymnasium.farama.org/environments/toy_text/frozen_lake/)
-Website: https://spinningup.openai.com/
-Paper:Dragan et al., *Quantum Reinforcement Learning for Solving a Stochastic Frozen Lake*, Fraunhofer Institute, 2022
+- Website: https://spinningup.openai.com/
+- Paper:Dragan et al., *Quantum Reinforcement Learning for Solving a Stochastic Frozen Lake*, Fraunhofer Institute, 2022
 ---
